@@ -172,6 +172,10 @@ footer p {
   flex: 1;
 }
 
+.download h2 {
+  text-align: center;
+}
+
 .download_img {
   flex: 1;
 }
