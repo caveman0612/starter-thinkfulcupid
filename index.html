@@ -27,37 +27,41 @@
   <main>
     <!-- Join -->
     <section id="join">
-      <div class="img">
-        <img src="images/love.png" alt="ThinkfulCupid - love" />
+      <div class="group">
+        <div class="img item-double">
+          <img src="images/love.png" alt="ThinkfulCupid - love" />
+        </div>
+
+        <!-- Add join form here -->
+        <div class="form item">
+          <h2>Find your perfect match</h2>
+          <form action="/" class="item">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="pwd">Create a password</label>
+              <input type="password" name="pwd" required>
+            </div>
+            <div class="field">
+              <label for="username">Username</label>
+              <input type="text" name="usrname" required>
+            </div>
+            <div class="field">
+              <label for="sex">I am a...</label>
+              <select name="sex" id="sex">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+                <option value="prefer">Prefer</option>
+              </select>
+            </div>
+            <button>JOIN</button>
+          </form>
+        </div>
       </div>
 
-      <!-- Add join form here -->
-      <div class="form">
-        <h2>Find your perfect match</h2>
-        <form action="/">
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="pwd">Create a password</label>
-            <input type="password" name="pwd" required>
-          </div>
-          <div class="field">
-            <label for="username">Username</label>
-            <input type="text" name="usrname" required>
-          </div>
-          <div class="field">
-            <label for="sex">I am a...</label>
-            <select name="sex" id="sex">
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-              <option value="other">Other</option>
-              <option value="prefer">Prefer</option>
-            </select>
-          </div>
-        </form>
-      </div>
     </section>
 
     <!-- About -->

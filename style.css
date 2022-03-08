@@ -9,7 +9,6 @@ h2 {
   font-size: 26px;
   font-weight: 400;
   margin: 0 10px 15px 10px;
-  text-align: center;
 }
 
 h3 {
@@ -40,11 +39,12 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .item-double {
@@ -93,18 +93,21 @@ header nav ul li a:hover {
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
 }
 
 .field {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
-  width: 320px;
 }
 
 form label {
@@ -114,7 +117,6 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
 }
 
 form button {
@@ -127,6 +129,10 @@ form button {
 }
 
 /* -----------about ------------ */
+
+#about h2 {
+  text-align: center;
+}
 
 .about_body {
   display: flex;
@@ -171,6 +177,10 @@ footer p {
 }
 
 /* --------blog---------- */
+
+#blog h2 {
+  text-align: center;
+}
 
 .top_section {
   display: flex;
