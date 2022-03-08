@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>ThinkfulCupid - Free Online Dating</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">ThinkfulCupid</div>
-      <nav>
-        <ul id="menu">
-          <li><a>Join</a></li>
-          <li><a>About</a></li>
-          <li><a>Download</a></li>
-          <li><a>Blog</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>ThinkfulCupid - Free Online Dating</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Lato&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <main>
-      <!-- Join -->
-      <section id="join">
+<body>
+  <header class="group">
+    <div class="logo">ThinkfulCupid</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#join">Join</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Join -->
+    <section id="join">
+      <div class="img">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
-        <!-- Add join form here -->
-      </section>
+      </div>
 
-      <!-- About -->
-      <section id="about" class="alternate-background">
-        <h2>About</h2>
-        <img
-          src="images/sunset-with-heart.png"
-          alt="ThinkfulCupid - Sunset with heart"
-        />
-        <img
-          src="images/two-people-sunset-candles.png"
-          alt="ThinkfulCupid - Two people with sunset and candles"
-        />
+      <!-- Add join form here -->
+      <div class="form">
+        <h2>Find your perfect match</h2>
+        <form action="/">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="pwd">Create a password</label>
+            <input type="password" name="pwd" required>
+          </div>
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" name="usrname" required>
+          </div>
+          <div class="field">
+            <label for="sex">I am a...</label>
+            <select name="sex" id="sex">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+              <option value="prefer">Prefer</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="alternate-background">
+      <h2>About</h2>
+      <div class="body">
+        <div class="div"> <img src="images/sunset-with-heart.png" alt="ThinkfulCupid - Sunset with heart" />
+        </div>
+        <div class="div"> <img src="images/two-people-sunset-candles.png" alt="ThinkfulCupid - Two people with sunset and candles" />
+        </div>
         <p>
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -58,10 +78,13 @@
           tristique vestibulum. In hac habitasse platea dictumst. Vestibulum sit
           amet pretium quam.
         </p>
-      </section>
+      </div>
 
-      <!-- Download -->
-      <section id="download">
+    </section>
+
+    <!-- Download -->
+    <section id="download">
+      <div class="download">
         <h2>Download the App</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -80,56 +103,72 @@
             hendrerit mauris.
           </li>
         </ul>
-
+      </div>
+      <div class="download_img">
         <img src="images/download.png" alt="Thinkfulbnb - download" />
-      </section>
+      </div>
 
-      <!-- Blog -->
-      <section id="blog" class="alternate-background">
-        <h2>Blog</h2>
+    </section>
 
-        <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        <p>
-          Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
-          Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
-          dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
-          dapibus neque, sed vehicula neque tristique vestibulum.
-        </p>
+    <!-- Blog -->
+    <section id="blog" class="alternate-background">
+      <h2>Blog</h2>
+      <div class="top">
+        <div class="blog">
 
-        <img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
-        <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
-        <p>
-          Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
-          Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
-          dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
-          dapibus neque, sed vehicula neque tristique vestibulum.
-        </p>
 
-        <img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
-        <h3>
-          Fusce augue diam, sollicitudin at metus id, congue placerat neque
-        </h3>
-        <p>
-          Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
-          Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
-          dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
-          dapibus neque, sed vehicula neque tristique vestibulum.
-        </p>
+          <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+          <p>
+            Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
+            Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
+            dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
+            dapibus neque, sed vehicula neque tristique vestibulum.
+          </p>
+        </div>
+        <div class="blog"><img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
+          <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
+          <p>
+            Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
+            Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
+            dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
+            dapibus neque, sed vehicula neque tristique vestibulum.
+          </p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="blog"><img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
+          <h3>
+            Fusce augue diam, sollicitudin at metus id, congue placerat neque
+          </h3>
+          <p>
+            Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
+            Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
+            dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
+            dapibus neque, sed vehicula neque tristique vestibulum.
+          </p>
+        </div>
+        <div class="blog"><img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
+          <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
+          <p>
+            Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
+            Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
+            dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
+            dapibus neque, sed vehicula neque tristique vestibulum.
+          </p>
+        </div>
+      </div>
 
-        <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
-        <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
-        <p>
-          Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
-          Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
-          dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
-          dapibus neque, sed vehicula neque tristique vestibulum.
-        </p>
-      </section>
-    </main>
 
-    <footer>
-      <p>© Thinkful</p>
-    </footer>
-  </body>
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© Thinkful</p>
+  </footer>
+</body>
+
 </html>
